@@ -11,7 +11,8 @@ use Illuminate\Validation\ValidationException;
 
 class AdminController extends Controller
 {
-    public function __contruct(){
+    public function __contruct()
+    {
         $this-middleware('auth');
     }
     public function index(){
