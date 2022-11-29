@@ -297,7 +297,7 @@ return [
             'topnav_right' => true,
         ],
         [
-            'text'         => 'buku',
+            'text'         => 'Buku',
             'url'         => 'admin/books',
             'icon'         => 'fas fa-fw fa-book',
             'can' => 'isAdmin',
