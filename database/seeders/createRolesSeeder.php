@@ -2,25 +2,26 @@
 
 namespace Database\Seeders;
 use App\Models\Role;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
 use Illuminate\Database\Seeder;
 
-class createRolesSeeder extends Seeder
+class CreateRolesSeeder extends Seeder
 {
     public function run()
     {
-        $Roles=[
-        [
-            'id' =>1,
-            'name' =>'Admin',
-        ],
-        [
-            'id' =>2,
-            'name' =>'User',
-        ]
+        $roles = [
+            [
+                'id' => 1,
+                'name' => 'Admin',
+            ],
+            [
+                'id' => 2,
+                'name' => 'User',
+            ]
         ];
-        foreach($roles as $key =>$role){
-            Role:: Create($role);
+        
+        foreach ($roles as $key => $role) {
+            Role::create($role);
         }
     }
 }
